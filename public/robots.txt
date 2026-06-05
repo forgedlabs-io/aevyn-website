@@ -1,0 +1,6 @@
+# PRE-LAUNCH GUARD — block all crawlers while the site is a work-in-progress
+# on the *.vercel.app URL. This also covers the static legal HTML in /public,
+# which doesn't pass through Next.js metadata.
+# REMOVE THIS FILE (and the `robots` block in app/layout.tsx) at launch.
+User-agent: *
+Disallow: /

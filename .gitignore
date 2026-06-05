@@ -37,3 +37,5 @@ next-env.d.ts
 
 # Claude Code agent state - local only, never commit
 .claude/
+
+.vercel
