@@ -1,0 +1,46 @@
+/* ============================================================
+   Aevyn — globals.css
+   Tailwind v4 + Aevyn dark/purple palette.
+   Marketing styles will be added later; this is scaffolding only.
+   ============================================================ */
+
+@import "tailwindcss";
+
+:root {
+  /* Aevyn brand tokens (purple #8B5CF6 on dark slate) */
+  --av-bg: #0f172a;
+  --av-surface: #1e293b;
+  --av-border: #334155;
+  --av-text: #f1f5f9;
+  --av-text-muted: #94a3b8;
+  --av-accent: #8b5cf6;
+  --av-accent-hover: #7c4ddf;
+}
+
+@theme inline {
+  --color-background: var(--av-bg);
+  --color-foreground: var(--av-text);
+  --color-accent: var(--av-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--av-bg);
+  color: var(--av-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+    Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--av-accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--av-accent-hover);
+  text-decoration: underline;
+}
