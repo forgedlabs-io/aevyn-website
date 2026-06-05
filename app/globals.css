@@ -1,20 +1,44 @@
 /* ============================================================
-   Aevyn — globals.css
-   Tailwind v4 + Aevyn dark/purple palette.
-   Marketing styles will be added later; this is scaffolding only.
+   AEVYN — globals.css
+   Tailwind v4 + AEVYN's own premium-dark palette.
+   Five-pillar brand: Spirit · Mind · Body · Craft · Life.
+   This is AEVYN's look — NOT forgedlabs.io "Obsidian & Sapphire".
    ============================================================ */
 
 @import "tailwindcss";
 
 :root {
-  /* Aevyn brand tokens (purple #8B5CF6 on dark slate) */
-  --av-bg: #0f172a;
-  --av-surface: #1e293b;
-  --av-border: #334155;
+  /* ── Surface & ink ─────────────────────────────────────────
+     Deep near-black slate. Premium, calm, high-contrast.        */
+  --av-bg: #0b0f1a; /* canonical AEVYN surface */
+  --av-surface: #121829; /* raised cards / blocks */
+  --av-surface-2: #1a2236; /* hover / nested */
+  --av-border: #232d44;
   --av-text: #f1f5f9;
-  --av-text-muted: #94a3b8;
-  --av-accent: #8b5cf6;
+  --av-text-muted: #97a3b8;
+  --av-text-faint: #5b677e;
+
+  /* ── Five-pillar palette ───────────────────────────────────
+     Each pillar owns a color; the hero/accent default is Spirit. */
+  --av-spirit: #8b5cf6; /* violet  — Spirit */
+  --av-mind: #f59e0b; /* amber   — Mind   */
+  --av-body: #ef4444; /* red     — Body   */
+  --av-craft: #3b82f6; /* blue    — Craft  */
+  --av-life: #10b981; /* emerald — Life   */
+
+  /* Primary accent = Spirit */
+  --av-accent: var(--av-spirit);
   --av-accent-hover: #7c4ddf;
+
+  /* Soft tinted glows derived from the pillar hues (for halos). */
+  --av-glow-spirit: rgba(139, 92, 246, 0.18);
+  --av-glow-mind: rgba(245, 158, 11, 0.16);
+  --av-glow-body: rgba(239, 68, 68, 0.16);
+  --av-glow-craft: rgba(59, 130, 246, 0.16);
+  --av-glow-life: rgba(16, 185, 129, 0.16);
+
+  /* Wordmark: Inter Black, wide tracking. */
+  --av-wordmark-tracking: 0.31em;
 }
 
 @theme inline {
@@ -31,9 +55,10 @@ body {
   margin: 0;
   background: var(--av-bg);
   color: var(--av-text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -43,4 +68,12 @@ a {
 a:hover {
   color: var(--av-accent-hover);
   text-decoration: underline;
+}
+
+/* The AEVYN wordmark: Inter Black, wide-tracked, never wraps. */
+.av-wordmark {
+  font-weight: 800;
+  letter-spacing: var(--av-wordmark-tracking);
+  text-transform: uppercase;
+  white-space: nowrap;
 }
