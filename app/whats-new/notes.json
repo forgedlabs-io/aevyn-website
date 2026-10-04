@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2026-10-04",
+    "date": "2026-10-04",
+    "title": "Suggested Workout is here",
+    "bullets": [
+      "Suggested Workout picks exercises for you from your favorites, moves you haven't done in a while, and muscles that have recovered.",
+      "Choose heavy, medium or light, set your time, and add notes before you start.",
+      "Swap a machine for a free-weight exercise (or the other way) that trains the same movement.",
+      "Warm-up, cool-down and cardio add-ons work again, and Build Workout has a cleaner header.",
+      "New My Workouts button on the Workout tab, and a search bar in Preferences.",
+      "Full-screen workouts put Exit, Do Not Disturb and Pause in one row, and Do Not Disturb now lets your music through."
+    ],
+    "screenshots": [
+      {
+        "url": "https://aevyn.io/whats-new/2026-10-04/1.png",
+        "alt": "Suggested Workout"
+      },
+      {
+        "url": "https://aevyn.io/whats-new/2026-10-04/2.png",
+        "alt": "Swapping a machine for a free-weight exercise"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-03",
+    "date": "2026-10-03",
+    "title": "New Stats and a rest screen that counts you in",
+    "bullets": [
+      "Stats has a fresh look: pick what to see and a time range, then check your Consistency radar and charts.",
+      "Rest between sets now fills the screen and counts you back in with 5-4-3-2-1 GO.",
+      "Exercise search understands muscles, nicknames, small typos and half-typed words.",
+      "Custom exercises can have calories per minute, with examples to help you pick a number.",
+      "Android: Aevyn can turn on Do Not Disturb while you work out.",
+      "Galaxy Watch calories are more accurate, using total calories and your heart rate."
+    ],
+    "screenshots": [
+      {
+        "url": "https://aevyn.io/whats-new/2026-10-03/1.png",
+        "alt": "The new Stats screen"
+      },
+      {
+        "url": "https://aevyn.io/whats-new/2026-10-03/2.png",
+        "alt": "Full-screen rest countdown"
+      }
+    ]
+  },
+  {
+    "id": "2026-10-02",
+    "date": "2026-10-02",
+    "title": "Make your own exercises",
+    "bullets": [
+      "Create your own exercises in Add Exercise, and edit or delete them any time.",
+      "Full-screen exercise mode shows one big card and nothing else.",
+      "Cardio calories use realistic rates for walking, running, rowing, bikes and more.",
+      "Forgot your password? Reset it with a code sent to your email.",
+      "Tap a task in Edit Routine to change its name or minutes."
+    ],
+    "screenshots": [
+      {
+        "url": "https://aevyn.io/whats-new/2026-10-02/1.png",
+        "alt": "Creating a custom exercise"
+      }
+    ]
+  }
+]

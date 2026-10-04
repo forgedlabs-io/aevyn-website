@@ -14,8 +14,10 @@ app/
   globals.css       # Tailwind v4 + AEVYN tokens (surface #0B0F1A, five-pillar palette)
   components/WaitlistForm.tsx  # client: anon-key Supabase insert + dedup handling
   lib/supabase.ts              # lazy browser client (anon key only)
+  whats-new/page.tsx           # /whats-new release notes (notes.json copied from aevyn-app via npm run sync:release-notes)
 public/
   screenshots/          # placeholder app screenshots (SVG) — replace with real PNGs
+  whats-new/<id>/<n>.png # What's new screenshots (also loaded by the app); missing ones are hidden
   privacy.html          # → /privacy   (rewrite)
   terms.html            # → /terms     (rewrite)
   delete-account.html   # → /delete-account (rewrite)

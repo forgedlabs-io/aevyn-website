@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:waitlist": "node scripts/test-waitlist.mjs"
+    "test:waitlist": "node scripts/test-waitlist.mjs",
+    "sync:release-notes": "node scripts/sync-release-notes.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",
