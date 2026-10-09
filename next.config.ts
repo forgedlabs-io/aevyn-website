@@ -3,10 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Serve the self-contained legal documents (static HTML in /public) at clean,
   // canonical URLs. These are the URLs referenced by the app and the app-store
-  // listings: aevyn.io/privacy, /terms, /delete-account.
+  // listings: aevyn.io/privacy, /terms, /delete-account, /consumer-health-data.
   async rewrites() {
     return [
       { source: "/privacy", destination: "/privacy.html" },
+      { source: "/consumer-health-data", destination: "/consumer-health-data.html" },
       { source: "/terms", destination: "/terms.html" },
       { source: "/delete-account", destination: "/delete-account.html" },
     ];

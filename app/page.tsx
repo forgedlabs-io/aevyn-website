@@ -134,6 +134,8 @@ export default function Home() {
       <footer style={styles.footer}>
         <nav style={styles.footerNav}>
           <a href="/privacy">Privacy Policy</a>
+          {/* Washington MHMDA: separate, distinct homepage link (RCW 19.373.020). */}
+          <a href="/consumer-health-data">Consumer Health Data Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
         </nav>
         <p style={styles.copyright}>© 2026 Forged Labs LLC</p>
@@ -279,7 +281,9 @@ const styles: Record<string, React.CSSProperties> = {
   },
   footerNav: {
     display: "flex",
-    gap: "24px",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "12px 24px",
     fontSize: "14px",
   },
   copyright: {
